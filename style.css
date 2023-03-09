@@ -1,0 +1,176 @@
+/* font-family: 'Outfit', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 580px;
+    margin: auto;
+    width: 384px;
+}
+
+.card {
+    margin: 2rem 1rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 28px 8px rgba(0,0,0,0.75);
+}
+
+
+/* Top Box */
+picture {
+    border-radius: 10px;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    
+}
+
+.img-overlay {
+    background-color: hsla(178, 100%, 50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    display: none;
+    border-radius: 10px;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+
+.img-top:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+
+/* bottom-box */
+.description {
+    margin-top: 5px;
+}
+
+.description a {
+    padding: 20px 0;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+
+.description a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.equilibrium-p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 1px;
+    margin-bottom: 22px;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth, .days {
+    display: flex;
+}
+
+.eth p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    padding-left: 7px;
+}
+
+.days p {
+    padding-left: 7px;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin: 23.3px 0;
+}
+
+
+/* footer */
+footer img {
+    margin-right: 15px;
+}
+
+.author {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+.author img {
+    height: 33px;
+    width: 33px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.author p :hover {
+color: hsl(178, 100%, 50%);
+}
+
+
+@media (max-width: 587px ) {
+    .container {
+        max-width: 580px;
+        margin: auto;
+        width: 359px;
+    }
+
+    .equilibrium-p {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .description a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    
+}
